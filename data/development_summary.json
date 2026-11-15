@@ -1,0 +1,239 @@
+{
+  "attempt": "dev-qwen4b-a02",
+  "study": "task-evidence-v1-20261107",
+  "status": "ANALYZED_development_only",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "finished_at": "2026-11-07T20:19:06.355181+00:00",
+  "planned_tasks": 163,
+  "template_groups": 38,
+  "candidates": 489,
+  "completed_model_calls": 9910,
+  "parsed_final_scores": 2139,
+  "arms": [
+    {
+      "arm": "A",
+      "all": {
+        "tasks": 61,
+        "success": 0.47814207650273227,
+        "uniform": 0.4863387978142077,
+        "oracle": 0.5573770491803278,
+        "fallback_tasks": 0
+      },
+      "mixed": {
+        "tasks": 8,
+        "success": 0.3958333333333333,
+        "uniform": 0.4583333333333333,
+        "oracle": 1.0,
+        "fallback_tasks": 0
+      },
+      "full": {
+        "tasks": 61,
+        "success": 0.47814207650273227,
+        "uniform": 0.4863387978142077,
+        "oracle": 0.5573770491803278,
+        "fallback_tasks": 0
+      },
+      "chunked": null,
+      "score_rows": 183,
+      "parsed_scores": 183,
+      "truncated_record_calls": 0
+    },
+    {
+      "arm": "B",
+      "all": {
+        "tasks": 163,
+        "success": 0.4734151329243354,
+        "uniform": 0.4376278118609407,
+        "oracle": 0.588957055214724,
+        "fallback_tasks": 0
+      },
+      "mixed": {
+        "tasks": 50,
+        "success": 0.6233333333333334,
+        "uniform": 0.5066666666666666,
+        "oracle": 1.0,
+        "fallback_tasks": 0
+      },
+      "full": {
+        "tasks": 61,
+        "success": 0.5109289617486339,
+        "uniform": 0.4863387978142077,
+        "oracle": 0.5573770491803278,
+        "fallback_tasks": 0
+      },
+      "chunked": {
+        "tasks": 102,
+        "success": 0.45098039215686275,
+        "uniform": 0.4084967320261438,
+        "oracle": 0.6078431372549019,
+        "fallback_tasks": 0
+      },
+      "score_rows": 489,
+      "parsed_scores": 489,
+      "truncated_record_calls": 0
+    },
+    {
+      "arm": "C",
+      "all": {
+        "tasks": 163,
+        "success": 0.46319018404907975,
+        "uniform": 0.4376278118609407,
+        "oracle": 0.588957055214724,
+        "fallback_tasks": 0
+      },
+      "mixed": {
+        "tasks": 50,
+        "success": 0.59,
+        "uniform": 0.5066666666666666,
+        "oracle": 1.0,
+        "fallback_tasks": 0
+      },
+      "full": {
+        "tasks": 61,
+        "success": 0.4672131147540984,
+        "uniform": 0.4863387978142077,
+        "oracle": 0.5573770491803278,
+        "fallback_tasks": 0
+      },
+      "chunked": {
+        "tasks": 102,
+        "success": 0.46078431372549017,
+        "uniform": 0.4084967320261438,
+        "oracle": 0.6078431372549019,
+        "fallback_tasks": 0
+      },
+      "score_rows": 489,
+      "parsed_scores": 489,
+      "truncated_record_calls": 14
+    },
+    {
+      "arm": "D",
+      "all": {
+        "tasks": 163,
+        "success": 0.46932515337423314,
+        "uniform": 0.4376278118609407,
+        "oracle": 0.588957055214724,
+        "fallback_tasks": 0
+      },
+      "mixed": {
+        "tasks": 50,
+        "success": 0.61,
+        "uniform": 0.5066666666666666,
+        "oracle": 1.0,
+        "fallback_tasks": 0
+      },
+      "full": {
+        "tasks": 61,
+        "success": 0.4918032786885246,
+        "uniform": 0.4863387978142077,
+        "oracle": 0.5573770491803278,
+        "fallback_tasks": 0
+      },
+      "chunked": {
+        "tasks": 102,
+        "success": 0.45588235294117646,
+        "uniform": 0.4084967320261438,
+        "oracle": 0.6078431372549019,
+        "fallback_tasks": 0
+      },
+      "score_rows": 489,
+      "parsed_scores": 489,
+      "truncated_record_calls": 15
+    },
+    {
+      "arm": "E",
+      "all": {
+        "tasks": 163,
+        "success": 0.4447852760736196,
+        "uniform": 0.4376278118609407,
+        "oracle": 0.588957055214724,
+        "fallback_tasks": 0
+      },
+      "mixed": {
+        "tasks": 50,
+        "success": 0.53,
+        "uniform": 0.5066666666666666,
+        "oracle": 1.0,
+        "fallback_tasks": 0
+      },
+      "full": {
+        "tasks": 61,
+        "success": 0.47267759562841527,
+        "uniform": 0.4863387978142077,
+        "oracle": 0.5573770491803278,
+        "fallback_tasks": 0
+      },
+      "chunked": {
+        "tasks": 102,
+        "success": 0.42810457516339867,
+        "uniform": 0.4084967320261438,
+        "oracle": 0.6078431372549019,
+        "fallback_tasks": 0
+      },
+      "score_rows": 489,
+      "parsed_scores": 489,
+      "truncated_record_calls": 116
+    }
+  ],
+  "primary_E_minus_D": {
+    "comparison": "E-D",
+    "tasks": 163,
+    "template_groups": 38,
+    "difference": -0.024539877300613498,
+    "ci95": [
+      -0.05257287338872908,
+      -0.0009522456709956709
+    ],
+    "tasks_improved": 8,
+    "tasks_harmed": 14,
+    "net_expected_successes": -4.0,
+    "bootstrap_repeats": 10000,
+    "seed": 20261107
+  },
+  "primary_full": {
+    "comparison": "E-D",
+    "tasks": 61,
+    "template_groups": 20,
+    "difference": -0.019125683060109287,
+    "ci95": [
+      -0.04477611940298507,
+      0.0028248587570621473
+    ],
+    "tasks_improved": 2,
+    "tasks_harmed": 3,
+    "net_expected_successes": -1.1666666666666665,
+    "bootstrap_repeats": 10000,
+    "seed": 20261107
+  },
+  "primary_chunked": {
+    "comparison": "E-D",
+    "tasks": 102,
+    "template_groups": 32,
+    "difference": -0.027777777777777776,
+    "ci95": [
+      -0.0760880747897656,
+      0.010101010101010104
+    ],
+    "tasks_improved": 6,
+    "tasks_harmed": 11,
+    "net_expected_successes": -2.833333333333333,
+    "bootstrap_repeats": 10000,
+    "seed": 20261107
+  },
+  "primary_mixed": {
+    "comparison": "E-D",
+    "tasks": 50,
+    "template_groups": 25,
+    "difference": -0.08,
+    "ci95": [
+      -0.17000170068027215,
+      -0.0034722222222222155
+    ],
+    "tasks_improved": 8,
+    "tasks_harmed": 14,
+    "net_expected_successes": -4.0,
+    "bootstrap_repeats": 10000,
+    "seed": 20261107
+  },
+  "boundary": "Development result only. No held-out confirmation or independent model re-scoring is claimed. Task/group IDs are renamed consistently; no task text, candidate IDs, raw observations, per-candidate labels or model outputs are redistributed."
+}

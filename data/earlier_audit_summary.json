@@ -1,0 +1,68 @@
+{
+  "study": "earlier-reward-model-audit",
+  "plan_version": "p1-ars-review-gpu-closure-v1-20260920-a6",
+  "source_analysis": "attempt-gate4-analysis-formal-r1",
+  "domain": "tau2-bench Airline; retained mixed-outcome pools",
+  "pool_count": 37,
+  "candidate_count": 370,
+  "candidates_per_pool": 10,
+  "process_repeat_count": 5,
+  "process_repeat_conditions": [
+    "repeat-1",
+    "repeat-2",
+    "repeat-3",
+    "repeat-4",
+    "repeat-5"
+  ],
+  "process_repeat_winner_histogram": [
+    {
+      "distinct_selected_winners": 1,
+      "pool_count": 37
+    }
+  ],
+  "reported_process_repeat_maximum_score_drift": 0.0,
+  "serialization_count": 3,
+  "serialization_conditions": [
+    "sorted-compact-v1",
+    "insertion-compact-v1",
+    "sorted-pretty-v1"
+  ],
+  "serialization_winner_histogram": [
+    {
+      "distinct_selected_winners": 1,
+      "pool_count": 21
+    },
+    {
+      "distinct_selected_winners": 2,
+      "pool_count": 15
+    },
+    {
+      "distinct_selected_winners": 3,
+      "pool_count": 1
+    }
+  ],
+  "reported_serialization_winner_agreement": 0.5675675675675675,
+  "reported_mean_spearman_score_correlation": 0.9685173424790863,
+  "reported_maximum_within_pool_rank_displacement": 7,
+  "serialization_selection_summaries": [
+    {
+      "condition": "sorted-compact-v1",
+      "n_pools": 37,
+      "reported_success_at_1": 0.21621621621621623,
+      "reported_excess_utility": -0.2837837837837838
+    },
+    {
+      "condition": "insertion-compact-v1",
+      "n_pools": 37,
+      "reported_success_at_1": 0.21621621621621623,
+      "reported_excess_utility": -0.2837837837837838
+    },
+    {
+      "condition": "sorted-pretty-v1",
+      "n_pools": 37,
+      "reported_success_at_1": 0.2972972972972973,
+      "reported_excess_utility": -0.20270270270270271
+    }
+  ],
+  "boundary": "Histogram arithmetic from retained local per-pool analysis. No original task or candidate IDs, scores, text, or model artifacts are included. This does not rerun scoring or independently reconstruct winners from candidate scores. Repeated processes and serializations are not additional independent tasks."
+}

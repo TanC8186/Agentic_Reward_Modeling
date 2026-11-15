@@ -1,0 +1,29 @@
+{
+  "attempt": "dev-qwen4b-a02",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "backend": "vllm 0.11.0",
+  "dtype": "bfloat16",
+  "decoding": "greedy; thinking disabled",
+  "seed": 20261107,
+  "context_tokens": 32768,
+  "full_route_limit_tokens": 24000,
+  "chunk_limit_tokens": 8000,
+  "record_output_limit_tokens": 1024,
+  "score_output_limit_tokens": 256,
+  "batch_limit": 8,
+  "arms": {
+    "A": "Full chronological record; full-route tasks only",
+    "B": "Last visible state and final agent output",
+    "C": "Latest entity/field table",
+    "D": "Goal-by-goal natural-language evidence check",
+    "E": "Explicit dependency evidence records"
+  },
+  "primary": "E minus D; task paired, template-cluster bootstrap; 10000 draws",
+  "pending": [
+    "647-task held-out evaluation",
+    "8B evaluation",
+    "E_time/E_static ablations",
+    "new serialization evaluation",
+    "SWE-Gym evaluation"
+  ]
+}
